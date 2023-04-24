@@ -1,4 +1,4 @@
-const emailForm = document.getElementById("emailForm");
+const emailForm = document.getElementById("email-form");
 
 // source: https://stackoverflow.com/a/46181
 function validateEmail(email) {
