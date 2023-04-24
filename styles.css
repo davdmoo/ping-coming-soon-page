@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "LibreFranklin";
+  src: url(./assets/fonts/LibreFranklin.ttf);
+  font-style: normal;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+  font-family: "LibreFranklin";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  text-align: center;
+  padding: 24px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+p {
+  font-family: "LibreFranklin";
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#header-text {
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 32px;
+}
+
+form input {
+  font-family: "LibreFranklin";
+  border-radius: 32px;
+  font-size: 14px;
+  color: hsl(0, 0%, 59%);
+  padding: 8px 24px 8px 24px;
+  font-weight: 300;
+  height: 32px;
+  border: 1px solid hsl(223, 100%, 88%);
+  margin-bottom: 16px;
+}
+
+.error-input {
+  border: 1px solid red;
+}
+
+form input[type="text"]:focus {
+  border: 1px solid hsl(223, 87%, 63%);
+}
+
+form button {
+  background-color: hsl(223, 87%, 63%);
+  border: 0;
+  border-radius: 32px;
+  color: white;
+  margin-top: 0;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: hsla(223, 87%, 63%, 0.8);
+}
+
+form button p {
+  font-weight: 600;
+}
+
+.email-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#error-msg {
+  color: hsl(354, 100%, 66%);
+  font-size: 12px;
+  font-style: italic;
+}
+
+#dashboard {
+  width: 100%;
+  margin: 48px 0 48px 0;
+}
+
+.share-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.logo {
+  background-color: white;
+  border: 0.5px solid hsla(0, 0%, 59%, 0.2);
+  color: hsl(223, 87%, 63%);
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo:hover {
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  bottom: 8px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 11px;
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 768px) {
+  form {
+    align-items: start;
+  }
+
+  form button {
+    padding-left: 48px;
+    padding-right: 48px;
+    height: 50px;
+  }
+
+  form input {
+    margin-top: 0px;
+    margin-right: 16px;
+    margin-bottom: 0px;
+    width: 256px;
+  }
+
+  #dashboard {
+    width: 480px;
+  }
+
+  .email-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #error-msg {
+    margin-left: 24px;
+  }
+}
